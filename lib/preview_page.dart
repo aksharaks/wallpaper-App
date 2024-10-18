@@ -40,6 +40,12 @@ class _PreviewPageState extends State<PreviewPage> {
         foregroundColor: const Color.fromRGBO(255, 255, 255, .8),
         shape: const CircleBorder(),
         onPressed: () {
+
+             // Debugging prints
+          print("Download button pressed!");
+          print("Image URL: ${widget.imageUrl}");
+          print("Image ID: ${widget.imageId}");
+
           repo.downloadImage(
               imageUrl: widget.imageUrl,
               imageId: widget.imageId,

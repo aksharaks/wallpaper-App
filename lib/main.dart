@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallpaper/custom_scroll_behaviour.dart';
 import 'package:wallpaper/homescreen.dart';
 
 void main() {
@@ -12,6 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+       scrollBehavior: CustomScrollBehavior(),
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
